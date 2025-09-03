@@ -12,7 +12,7 @@ export default function Footer() {
             <div className="max-w-6xl mx-auto px-4 relative z-10">
                 <div className="text-center mb-12">
                     <div className="text-6xl mb-6 animate-bounce"><span className="animate-pulse text-pink-500">❤️</span></div>
-                    <h3 className="font-serif text-4xl mb-4 font-bold">Felix & Success</h3>
+                    <h3 className="font-serif text-4xl mb-4 font-bold">Success & Felix</h3>
                     <p className="text-xl mb-8 font-medium">Thank you for being part of our love story</p>
                 </div>
 
