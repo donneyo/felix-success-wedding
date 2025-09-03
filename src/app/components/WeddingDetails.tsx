@@ -46,7 +46,7 @@ export default function WeddingDetails() {
 
   // Wedding Crew Data
   const crew = [
-    { role: "Best Man", name: "Don neyo", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756910342/bestman_pdejkw.webp" },
+    { role: "Best Man", name: "Don neyo", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756941359/PXL_20250827_143323810_ev50hd.jpg" },
     { role: "Maid of Honor", name: "Jane Smith", image: "https://res.cloudinary.com/xxxx/image/upload/v123456/bestman.jpg" },
     { role: "Bridesmaid", name: "Emily Johnson", image: "https://res.cloudinary.com/xxxx/image/upload/v123456/bestman.jpg" },
     { role: "Bridesmaid", name: "Sarah Williams" , image: "https://res.cloudinary.com/xxxx/image/upload/v123456/bestman.jpg"},
