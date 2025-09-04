@@ -115,7 +115,7 @@ export default function OurStory() {
 >
   <div className="bg-white rounded-2xl shadow-xl border-2 bg-gradient-to-br from-white to-teal-100 p-6 md:p-10">
     <h3 className="text-3xl md:text-4xl font-bold text-teal-600 mb-6 text-center">
-      Q&amp;A
+      Couple's Q&A Session 
     </h3>
 
     <ol className="list-decimal pl-6 space-y-6 text-gray-700">
