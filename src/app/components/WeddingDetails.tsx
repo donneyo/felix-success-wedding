@@ -46,16 +46,16 @@ export default function WeddingDetails() {
 
   // Wedding Crew Data
   const crew = [
-    { role: "Best Man", name: "Don neyo", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756941359/PXL_20250827_143323810_ev50hd.jpg" },
+    { role: "Best Man", name: "Don neyo", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757033805/IMG-20250108-WA0004_diijmy.jpg" },
     { role: "Maid of Honor", name: "Jane Smith", image: "https://res.cloudinary.com/xxxx/image/upload/v123456/bestman.jpg" },
     { role: "Bridesmaid", name: "Emily Johnson", image: "https://res.cloudinary.com/xxxx/image/upload/v123456/bestman.jpg" },
     { role: "Bridesmaid", name: "Sarah Williams" , image: "https://res.cloudinary.com/xxxx/image/upload/v123456/bestman.jpg"},
     { role: "Bridesmaid", name: "Emily Johnson", image: "https://res.cloudinary.com/xxxx/image/upload/v123456/bestman.jpg" },
     { role: "Bridesmaid", name: "Sarah Williams", image: "https://res.cloudinary.com/xxxx/image/upload/v123456/bestman.jpg" },
-    { role: "Groomsman", name: "Michael Brown", image: "https://res.cloudinary.com/xxxx/image/upload/v123456/bestman.jpg" },
-    { role: "Groomsman", name: "David Wilson", image: "https://res.cloudinary.com/xxxx/image/upload/v123456/bestman.jpg" },
-    { role: "Groomsman", name: "Daniel Anderson", image: "https://res.cloudinary.com/xxxx/image/upload/v123456/bestman.jpg" },
-    { role: "Groomsman", name: "James Thomas" , image: "https://res.cloudinary.com/xxxx/image/upload/v123456/bestman.jpg"},
+    { role: "Groomsman", name: "Friday David", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757033772/IMG-20250108-WA0006_gecmak.jpg" },
+    { role: "Groomsman", name: "Vicent ogungbe", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757033803/IMG-20250812-WA0014_kubcbd.jpg" },
+    { role: "Groomsman", name: "Osagie obode", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757033804/IMG-20250111-WA0007_uwnud0.jpg" },
+    { role: "Groomsman", name: "Chukweze" , image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757033804/IMG-20250112-WA0046_rlk4u4.jpg"},
     { role: "DJ", name: "DJ Neyo", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756910333/Dj_NEYO_E_Flyer_l1x5wu.jpg" },
     { role: "Event Planner", name: "Sophia Martinez", image: "https://res.cloudinary.com/xxxx/image/upload/v123456/bestman.jpg" },
   ];
