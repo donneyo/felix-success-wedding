@@ -101,7 +101,7 @@ const Hero = () => {
           >
             <Image
               src={slide.image}
-              alt={`slide ${i}`}
+              alt={``}
               fill
               className="object-cover"
               priority={i === 0}
