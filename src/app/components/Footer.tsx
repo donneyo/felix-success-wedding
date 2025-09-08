@@ -22,7 +22,7 @@ export default function Footer() {
                         <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 border-2 border-white/30">
                             <div className="text-3xl mb-3">📅</div>
                             <h4 className="font-serif text-lg font-bold mb-2">Wedding Day</h4>
-                            <p className="text-sm">October 06, 2025</p>
+                            <p className="text-sm">October 04, 2025</p>
                             <p className="text-sm">Lagos City,Surulere</p>
                         </div>
                     </div>
@@ -58,7 +58,7 @@ export default function Footer() {
                         <div className="w-12 h-0.5 bg-white/50"></div>
                     </div>
                     <p className="text-sm opacity-90 font-medium">
-                        Made with love for our special day • October 06, 2025
+                        Made with love for our special day • October 04, 2025
                     </p>
                     <p className="text-xs opacity-75 mt-2">
                         We can’t wait to celebrate with all of you! 🎉
