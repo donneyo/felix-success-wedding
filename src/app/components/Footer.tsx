@@ -58,7 +58,7 @@ export default function Footer() {
                         <div className="w-12 h-0.5 bg-white/50"></div>
                     </div>
                     <p className="text-sm opacity-90 font-medium">
-                        Made with love for our special day • October 04, 2025
+                        Made with love @donneyocodes for our special day • October 04, 2025
                     </p>
                     <p className="text-xs opacity-75 mt-2">
                         We can’t wait to celebrate with all of you! 🎉
