@@ -59,7 +59,7 @@ export default function WeddingDetails() {
     >
      <div className="max-w-6xl mx-auto px-4">
        <h2 className="font-serif text-4xl md:text-5xl text-center text-white-900 mb-12 font-bold">
-         The Wedding Crew
+         Our Wedding Crew
        </h2>
 
        {/* Wedding Crew Section */}
