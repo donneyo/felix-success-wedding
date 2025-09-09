@@ -1,3 +1,5 @@
+import ScrollToTop from "../components/ScrollToTop";
+
 export default function Footer() {
     return (
         <footer className=" bg-gradient-to-br from-blue-1500 to-white-100 text-white py-16 relative overflow-hidden">
@@ -12,7 +14,7 @@ export default function Footer() {
             <div className="max-w-6xl mx-auto px-4 relative z-10">
                 <div className="text-center mb-12">
                     <div className="text-6xl mb-6 animate-bounce"><span className="animate-pulse text-pink-500">❤️</span></div>
-                    <h3 className="font-serif text-4xl mb-4 font-bold">Success & Felix</h3>
+                    <h3 className="font-serif text-4xl mb-4 font-bold">Felix & Success</h3>
                     <p className="text-xl mb-8 font-medium">Thank you for being part of our love story</p>
                 </div>
 
@@ -22,8 +24,8 @@ export default function Footer() {
                         <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 border-2 border-white/30">
                             <div className="text-3xl mb-3">📅</div>
                             <h4 className="font-serif text-lg font-bold mb-2">Wedding Day</h4>
-                            <p className="text-sm">October 04, 2025</p>
-                            <p className="text-sm">Lagos City,Surulere</p>
+                            <p className="text-sm">June 15, 2024</p>
+                            <p className="text-sm">Love City</p>
                         </div>
                     </div>
 
@@ -33,7 +35,7 @@ export default function Footer() {
                             <div className="text-3xl mb-3">💌</div>
                             <h4 className="font-serif text-lg font-bold mb-2">Get in Touch</h4>
                             <p className="text-sm">Questions about the wedding?</p>
-                            <p className="text-sm">Contact our families: Niyi:09011237831 , Loveth:07066701415</p>
+                            <p className="text-sm">Contact our families</p>
                         </div>
                     </div>
 
@@ -42,7 +44,7 @@ export default function Footer() {
                         <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 border-2 border-white/30">
                             <div className="text-3xl mb-3">📸</div>
                             <h4 className="font-serif text-lg font-bold mb-2">Share the Love</h4>
-                            <p className="text-sm">#SuccessAndFelix2025</p>
+                            <p className="text-sm">#FelixAndSuccess2024</p>
                             <p className="text-sm">Tag us in your photos!</p>
                         </div>
                     </div>
@@ -58,13 +60,14 @@ export default function Footer() {
                         <div className="w-12 h-0.5 bg-white/50"></div>
                     </div>
                     <p className="text-sm opacity-90 font-medium">
-                        Made with love @donneyocodes for our special day • October 04, 2025
+                        Made with love for our special day • June 15, 2024
                     </p>
                     <p className="text-xs opacity-75 mt-2">
                         We can’t wait to celebrate with all of you! 🎉
                     </p>
                 </div>
             </div>
+            <ScrollToTop />
         </footer>
     );
 }
