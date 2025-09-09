@@ -7,6 +7,7 @@ import Gift from "./components/Gift";
 import RSVP from "./components/RSVP";
 import Footer from "./components/Footer";
 import WelcomeModal from "./components/WelcomeModal";
+import Location from "./components/Location";
 
 export default function Home() {
     return (
@@ -17,6 +18,7 @@ export default function Home() {
             <OurStory />
             <Gallery />
             <WeddingDetails />
+            <Location />
             <Gift />
             <RSVP />
             <Footer />
