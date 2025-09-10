@@ -30,7 +30,7 @@ export default function Location() {
                 <br /> Railway compound parish Zone A , Lagos mainland
               </p>
               <p>
-                <strong className="text-red-600">Dress Code:</strong> White, Torquoise Blue, Gold
+                <strong className="text-red-600">Dress Code:</strong> White, sky Blue, Gold
               </p>
             </div>
           </div>
@@ -53,7 +53,7 @@ export default function Location() {
                 <br /> Lagos 101241
               </p>
               <p>
-                <strong className="text-red-600">Dress Code:</strong> White, Torquoise Blue, Gold
+                <strong className="text-red-600">Dress Code:</strong> Peach, Sky Blue, Gold
               </p>
             </div>
           </div>
@@ -105,4 +105,5 @@ export default function Location() {
     </section>
   );
 }
+
 
