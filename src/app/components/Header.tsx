@@ -24,8 +24,8 @@
         { href: "#", label: "Home" },
         { href: "#story", label: "Our Story" },
         { href: "#gallery", label: "Gallery" },
-        { href: "#details", label: "Wedding party" },
-        { href: "#location", label: "Location" },
+        { href: "#details", label: "Wedding Crew" },
+        { href: "#location", label: "Wedding Venues" },
         { href: "#gifts", label: "Gifts" },
         { href: "#rsvp", label: "RSVP" },
       ];
