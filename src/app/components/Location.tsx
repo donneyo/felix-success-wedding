@@ -26,8 +26,8 @@ export default function Location() {
                 <strong className="text-red-600">Time:</strong> 10:00 AM
               </p>
               <p>
-                <strong className="text-red-600">Location:</strong> St. Paul’s Anglican Church
-                <br /> 25 Marina Road, Lagos Island
+                <strong className="text-red-600">Location:</strong> Redeem christian church of God(Rccg)
+                <br /> Railway compound parish Zone A , Lagos mainland
               </p>
               <p>
                 <strong className="text-red-600">Dress Code:</strong> White, Torquoise Blue, Gold
@@ -105,3 +105,4 @@ export default function Location() {
     </section>
   );
 }
+
