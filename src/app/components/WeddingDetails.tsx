@@ -57,7 +57,7 @@ export default function WeddingDetails() {
   const groomsmenSlides = [
     {
       label: "Best Man - Neyo",
-      img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757468709/neyo4_i3yoqw.jpg",
+      img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757468699/neyo3_xlgcaj.jpg",
     },
     {
       label: "Groomsman - Skenk",
