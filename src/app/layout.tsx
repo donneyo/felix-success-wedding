@@ -8,7 +8,7 @@ const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfa
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata = {
-    title: "Elegant Wedding",
+    title: "SuccessAndFelix2025",
     description: "A beautiful modern dark theme wedding site",
 };
 
