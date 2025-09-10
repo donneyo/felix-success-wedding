@@ -29,6 +29,8 @@ export default function GiftRegistry() {
       return;
     }
 
+    setLoading(true); // start loading
+
     try {
       const res = await fetch("/api/pledges", {
         method: "POST",
@@ -55,8 +57,11 @@ export default function GiftRegistry() {
     } catch (err) {
       console.error(err);
       alert("❌ Something went wrong. Please try again.");
+    } finally {
+      setLoading(false); // stop loading
     }
   };
+
 
   const gifts: Gift[] = [
     { id: 1, category: "kitchen", name: "Professional Cookware Set", price: 250000, tagColor: "bg-gold", border: "border-gold", emoji: "🍳", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756902847/cookware2_wwhz8e.jpg" },
@@ -341,12 +346,18 @@ export default function GiftRegistry() {
                   className="w-full border border-gray-300 rounded-lg px-3 py-2 text-gray-800 bg-white"
                 />
 
-                <button
-                  type="submit"
-                  className="w-full bg-rose-500 text-white rounded-lg py-2 font-medium hover:bg-rose-600 transition-colors"
-                >
-                  Notify Couple
-                </button>
+               <button
+                 type="submit"
+                 disabled={loading}
+                 className={`w-full rounded-lg py-2 font-medium transition-colors ${
+                   loading
+                     ? "bg-rose-400 cursor-not-allowed"
+                     : "bg-rose-500 text-white hover:bg-rose-600"
+                 }`}
+               >
+                 {loading ? "Submitting..." : "Notify Couple"}
+               </button>
+
               </form>
             </div>
           </div>
