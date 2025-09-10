@@ -57,42 +57,42 @@ export default function WeddingDetails() {
       id="details"
       className="py-20 bg-gradient-to-br from-blue-1500 to-white-100"
     >
-     <div className="max-w-6xl mx-auto px-4">
-       <h2 className="font-serif text-4xl md:text-5xl text-center text-white-900 mb-12 font-bold">
-         Our Wedding Crew
-       </h2>
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="font-serif text-4xl md:text-5xl text-center text-white-900 mb-8 font-bold">
+          The Wedding Crew
+        </h2>
 
-       {/* Wedding Crew Section */}
-       <div className="space-y-20 py-20">
-         {/* Bridesmaids Carousel */}
-         <section className="flex flex-col items-center space-y-6">
-           <CrewCarousel slides={bridesmaidsSlides} />
-           <h2 className="font-serif text-3xl md:text-4xl text-center text-white-900 font-bold">
-             The Bridesmaids
-           </h2>
-         </section>
+        {/* Wedding Crew Section */}
+        <div className="space-y-20 py-20">
+          {/* Bridesmaids Carousel */}
+          <div className="flex flex-col items-center space-y-4">
+            <h3 className="text-base md:text-lg font-semibold text-gray-500 tracking-wide uppercase">
+              Bridesmaids
+            </h3>
+            <CrewCarousel slides={bridesmaidsSlides} />
+          </div>
 
-         {/* Groomsmen Carousel */}
-         <section className="flex flex-col items-center space-y-6">
-           <CrewCarousel slides={groomsmenSlides} />
-           <h2 className="font-serif text-3xl md:text-4xl text-center text-white-900 font-bold">
-             The Groomsmen
-           </h2>
-         </section>
+          {/* Groomsmen Carousel */}
+          <div className="flex flex-col items-center space-y-4">
+            <h3 className="text-base md:text-lg font-semibold text-gray-500 tracking-wide uppercase">
+              Groomsmen
+            </h3>
+            <CrewCarousel slides={groomsmenSlides} />
+          </div>
 
-         {/* Others Carousel */}
-         <section className="flex flex-col items-center space-y-6">
-           <CrewCarousel slides={othersSlides} />
-           <h2 className="font-serif text-3xl md:text-4xl text-center text-white-900 font-bold">
-             Dj & Events Planner
-           </h2>
-         </section>
-       </div>
-     </div>
-
+          {/* Others Carousel */}
+          <div className="flex flex-col items-center space-y-4">
+            <h3 className="text-base md:text-lg font-semibold text-gray-500 tracking-wide uppercase">
+              DJ And Event Planner
+            </h3>
+            <CrewCarousel slides={othersSlides} />
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
+
 
 // Reusable Crew Carousel
 function CrewCarousel({ slides }: { slides: { label: string; img: string }[] }) {
