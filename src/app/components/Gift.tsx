@@ -66,6 +66,9 @@ export default function GiftRegistry() {
   const gifts: Gift[] = [
     { id: 1, category: "kitchen", name: "Professional Cookware Set", price: 80000, tagColor: "bg-gold", border: "border-gold", emoji: "🍳", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756902847/cookware2_wwhz8e.jpg" },
     { id: 2, category: "kitchen", name: "Premium Microwave oven", price: 40000, tagColor: "bg-navy", border: "border-navy", emoji: "☕", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756905108/microwave_cxncoc.jpg" },
+    { id: 11, category: "kitchen", name: "Blender", price: 40000, tagColor: "bg-navy", border: "border-navy", emoji: "☕", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757530015/blender_jgq97j.webp" },
+    { id: 12, category: "home", name: "Washing machine", price: 250000, tagColor: "bg-navy", border: "border-navy", emoji: "☕", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757530015/washing-machine_phqmvr.webp" },
+    { id: 13, category: "kitchen", name: "Air fryer", price: 50000, tagColor: "bg-navy", border: "border-navy", emoji: "☕", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757530015/air_fryer_kvaifi.webp" },
     { id: 3, category: "kitchen", name: "Elegant Dinnerware Set", price: 30000, tagColor: "bg-crimson", border: "border-crimson", emoji: "🍽️", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756905572/dinner_wares_mwfjce.jpg" },
     { id: 4, category: "home", name: "Hisense 1.5HP Inverter air conditioner.", price: 400000, tagColor: "bg-gold", border: "border-gold", emoji: "🕯️", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756905901/Ac_air_conditioner_ntjsor.jpg" },
     { id: 5, category: "home", name: "Inverter and solar panel", price: 600000, tagColor: "bg-navy", border: "border-navy", emoji: "🖼️", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756906276/inverter_dyttf1.jpg" },
