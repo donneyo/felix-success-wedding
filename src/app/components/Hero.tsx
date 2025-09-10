@@ -117,6 +117,7 @@ const Hero = () => {
               src={slide.image}
               alt={`slide ${i}`}
               fill
+              unoptimized
               className="object-cover"
               priority={i === 0}
             />
