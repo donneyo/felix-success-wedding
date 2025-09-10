@@ -64,16 +64,16 @@ export default function GiftRegistry() {
 
 
   const gifts: Gift[] = [
-    { id: 1, category: "kitchen", name: "Professional Cookware Set", price: 120000, tagColor: "bg-gold", border: "border-gold", emoji: "🍳", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756902847/cookware2_wwhz8e.jpg" },
+    { id: 1, category: "kitchen", name: "Professional Cookware Set", price: 80000, tagColor: "bg-gold", border: "border-gold", emoji: "🍳", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756902847/cookware2_wwhz8e.jpg" },
     { id: 2, category: "kitchen", name: "Premium Microwave oven", price: 40000, tagColor: "bg-navy", border: "border-navy", emoji: "☕", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756905108/microwave_cxncoc.jpg" },
-    { id: 3, category: "kitchen", name: "Elegant Dinnerware Set", price: 49000, tagColor: "bg-crimson", border: "border-crimson", emoji: "🍽️", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756905572/dinner_wares_mwfjce.jpg" },
-    { id: 4, category: "home", name: "Hisense 1.5HP Inverter air conditioner.", price: 472499, tagColor: "bg-gold", border: "border-gold", emoji: "🕯️", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756905901/Ac_air_conditioner_ntjsor.jpg" },
+    { id: 3, category: "kitchen", name: "Elegant Dinnerware Set", price: 30000, tagColor: "bg-crimson", border: "border-crimson", emoji: "🍽️", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756905572/dinner_wares_mwfjce.jpg" },
+    { id: 4, category: "home", name: "Hisense 1.5HP Inverter air conditioner.", price: 400000, tagColor: "bg-gold", border: "border-gold", emoji: "🕯️", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756905901/Ac_air_conditioner_ntjsor.jpg" },
     { id: 5, category: "home", name: "Inverter and solar panel", price: 600000, tagColor: "bg-navy", border: "border-navy", emoji: "🖼️", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756906276/inverter_dyttf1.jpg" },
-    { id: 6, category: "home", name: "Smart TV 50inches", price: 316999, tagColor: "bg-crimson", border: "border-crimson", emoji: "🪴", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756906562/tv_blj4ny.jpg" },
-    { id: 7, category: "bedroom", name: "Luxury Bedding Set", price: 350000, tagColor: "bg-gold", border: "border-gold", emoji: "🛏️", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756907334/bed_zxefwr.jpg" },
-    { id: 8, category: "bedroom", name: "Steel Wardrobe,Cabinet & Storage With Inner Safe", price: 245000, tagColor: "bg-navy", border: "border-navy", emoji: "🛁", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756907539/wardrobe_nmo6nv.jpg" },
-    { id: 9, category: "experience", name: "Honeymoon Fund", price: 7000000, tagColor: "bg-crimson", border: "border-crimson", emoji: "✈️", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756907857/bahamas_rhdwwn.jpg" },
-    { id: 10, category: "experience", name: "Fine Dining Experience", price: 250000, tagColor: "bg-gold", border: "border-gold", emoji: "🍽️", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756907938/dinner_fc4wur.jpg" },
+    { id: 6, category: "home", name: "Smart TV 50inches", price: 300000, tagColor: "bg-crimson", border: "border-crimson", emoji: "🪴", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756906562/tv_blj4ny.jpg" },
+    { id: 7, category: "bedroom", name: "Luxury Bedding Set", price: 250000, tagColor: "bg-gold", border: "border-gold", emoji: "🛏️", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756907334/bed_zxefwr.jpg" },
+    { id: 8, category: "bedroom", name: "Steel Wardrobe,Cabinet & Storage With Inner Safe", price: 120000, tagColor: "bg-navy", border: "border-navy", emoji: "🛁", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756907539/wardrobe_nmo6nv.jpg" },
+    { id: 9, category: "experience", name: "Honeymoon Fund", price: 150000, tagColor: "bg-crimson", border: "border-crimson", emoji: "✈️", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756907857/bahamas_rhdwwn.jpg" },
+    { id: 10, category: "experience", name: "Fine Dining Experience", price: 100000, tagColor: "bg-gold", border: "border-gold", emoji: "🍽️", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756907938/dinner_fc4wur.jpg" },
   ];
 
   const filteredGifts =
