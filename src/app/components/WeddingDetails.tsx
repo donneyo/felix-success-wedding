@@ -7,37 +7,101 @@ export default function WeddingDetails() {
   // Bridesmaids slides
   const bridesmaidsSlides = [
     {
-      label: "Maid of Honor - Jane Smith",
+      label: "Maid of Honor - Loveth",
+      img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757376059/b1_hmrjzl.jpg",
+    },
+    {
+      label: "Bridesmaid - Abigail",
       img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757376057/b8_juvmyj.jpg",
     },
     {
-      label: "Bridesmaid - Emily Johnson",
-      img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757376057/b8_juvmyj.jpg",
+      label: "Bridesmaid - Bella",
+      img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757465841/bella_xfbvhx.jpg",
     },
     {
-      label: "Bridesmaid - Sarah Williams",
-      img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757376057/b8_juvmyj.jpg",
-    },
+          label: "Bridesmaid - Ajoke",
+          img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757376055/b6_u2jcqh.jpg",
+        },
+        {
+          label: "Bridesmaid - Annabella",
+          img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757376055/b4_rbgfw1.jpg",
+        },
+        {
+          label: "Bridesmaid - Ruky",
+          img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757376058/b3_uxgxzn.jpg",
+        },
+        {
+            label: "Bridesmaid - Favor",
+            img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757376055/b5_ipfxc1.jpg",
+        },
+        {
+            label: "Bridesmaid - Sarah",
+            img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757376058/b9_ppun4e.jpg",
+        },
+        {
+            label: "Bridesmaid - Joy",
+            img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757376064/b7_lsfv3r.jpg",
+        },
+        {
+            label: "Bridesmaid - Mary",
+             img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757376054/b2_hnzuoz.jpg",
+        },
+        {
+            label: "Bridesmaid - Nancy",
+            img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757465376/IMG-20250909-WA0056_oiykmd.jpg",
+        },
+        {
+            label: "Bridesmaid - Christiana",
+            img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757465841/ristia_vz1ikg.jpg",
+        },
   ];
 
   // Groomsmen slides
   const groomsmenSlides = [
     {
-      label: "Best Man - Don Neyo",
-      img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756910342/bestman_pdejkw.webp",
+      label: "Best Man - Neyo",
+      img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757467069/neyo_urqzdr.jpg",
     },
     {
-      label: "Groomsman - Michael Brown",
-      img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757376057/b8_juvmyj.jpg",
+      label: "Groomsman - Skenk",
+      img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757467070/skenk_bsrovy.jpg",
     },
     {
-      label: "Groomsman - David Wilson",
-      img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757376057/b8_juvmyj.jpg",
+      label: "Groomsman - Lawrence",
+      img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757467070/lawrence_lybmq2.jpg",
     },
     {
-      label: "Groomsman - Daniel Anderson",
-      img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757376057/b8_juvmyj.jpg",
+      label: "Groomsman - Vicent",
+      img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757467070/vicent_ffqnlf.jpg",
     },
+    {
+          label: "Groomsman - Adigun",
+          img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757467069/adg_ky95re.jpg",
+        },
+        {
+          label: "Groomsman - Olaolu",
+          img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757467069/olu_ryq1dx.jpg",
+        },
+        {
+          label: "Groomsman - Osagie",
+          img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757467069/osagie_pk4xja.jpg",
+        },
+    {
+          label: "Groomsman - Tolulope",
+          img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757467068/ope_soxbkd.jpg",
+        },
+        {
+          label: "Groomsman - Friday",
+          img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757467067/friday_wudktf.jpg",
+        },
+        {
+          label: "Groomsman - Ire",
+          img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757467067/ire_okkq8k.jpg",
+        },
+        {
+            label: "Groomsman - Dubby",
+            img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757467065/dubby_sy5u4p.jpg",
+        },
   ];
 
   // Others (DJ, Event Planner, etc.)
@@ -123,7 +187,7 @@ function CrewCarousel({ slides }: { slides: { label: string; img: string }[] }) 
             alt={item.label}
             className="w-full h-full object-cover"
           />
-          <div className="absolute bottom-4 left-4 bg-rose-600/90 rounded-lg px-3 py-2">
+          <div className="absolute bottom-10 left-4 bg-rose-600/90 rounded-lg px-3 py-2">
             <p className="text-sm text-white font-medium">{item.label}</p>
           </div>
         </motion.div>
@@ -146,7 +210,7 @@ function CrewCarousel({ slides }: { slides: { label: string; img: string }[] }) 
       </button>
 
       {/* Dots */}
-      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex space-x-2">
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
         {slides.map((_, i) => (
           <button
             key={i}
