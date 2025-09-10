@@ -26,10 +26,7 @@ export default function WeddingDetails() {
           label: "Bridesmaid - Annabella",
           img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757376055/b4_rbgfw1.jpg",
         },
-        {
-          label: "Bridesmaid - Ruky",
-          img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757376058/b3_uxgxzn.jpg",
-        },
+       
         {
             label: "Bridesmaid - Favor",
             img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757376055/b5_ipfxc1.jpg",
@@ -47,7 +44,7 @@ export default function WeddingDetails() {
              img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757376054/b2_hnzuoz.jpg",
         },
         {
-            label: "Bridesmaid - Nancy",
+            label: "Bridesmaid - Ruky",
             img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757465376/IMG-20250909-WA0056_oiykmd.jpg",
         },
         {
@@ -66,10 +63,7 @@ export default function WeddingDetails() {
       label: "Groomsman - Skenk",
       img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757467070/skenk_bsrovy.jpg",
     },
-    {
-      label: "Groomsman - Lawrence",
-      img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757467070/lawrence_lybmq2.jpg",
-    },
+   
     {
       label: "Groomsman - Vicent",
       img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757467070/vicent_ffqnlf.jpg",
@@ -86,18 +80,11 @@ export default function WeddingDetails() {
           label: "Groomsman - Osagie",
           img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757467069/osagie_pk4xja.jpg",
         },
-    {
-          label: "Groomsman - Tolulope",
-          img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757467068/ope_soxbkd.jpg",
-        },
         {
           label: "Groomsman - Friday",
           img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757467067/friday_wudktf.jpg",
         },
-        {
-          label: "Groomsman - Ire",
-          img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757467067/ire_okkq8k.jpg",
-        },
+       
         {
             label: "Groomsman - Dubby",
             img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757467065/dubby_sy5u4p.jpg",
@@ -111,8 +98,8 @@ export default function WeddingDetails() {
       img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756910333/Dj_NEYO_E_Flyer_l1x5wu.jpg",
     },
     {
-      label: "Event Planner - Sophia Martinez",
-      img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757376057/b8_juvmyj.jpg",
+      label: "Event Planner - Bella",
+      img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757465841/bella_xfbvhx.jpg",
     },
   ];
 
