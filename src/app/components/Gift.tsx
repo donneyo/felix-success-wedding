@@ -64,8 +64,8 @@ export default function GiftRegistry() {
 
 
   const gifts: Gift[] = [
-    { id: 1, category: "kitchen", name: "Professional Cookware Set", price: 250000, tagColor: "bg-gold", border: "border-gold", emoji: "🍳", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756902847/cookware2_wwhz8e.jpg" },
-    { id: 2, category: "kitchen", name: "Premium Microwave oven", price: 47499, tagColor: "bg-navy", border: "border-navy", emoji: "☕", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756905108/microwave_cxncoc.jpg" },
+    { id: 1, category: "kitchen", name: "Professional Cookware Set", price: 120000, tagColor: "bg-gold", border: "border-gold", emoji: "🍳", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756902847/cookware2_wwhz8e.jpg" },
+    { id: 2, category: "kitchen", name: "Premium Microwave oven", price: 40000, tagColor: "bg-navy", border: "border-navy", emoji: "☕", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756905108/microwave_cxncoc.jpg" },
     { id: 3, category: "kitchen", name: "Elegant Dinnerware Set", price: 49000, tagColor: "bg-crimson", border: "border-crimson", emoji: "🍽️", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756905572/dinner_wares_mwfjce.jpg" },
     { id: 4, category: "home", name: "Hisense 1.5HP Inverter air conditioner.", price: 472499, tagColor: "bg-gold", border: "border-gold", emoji: "🕯️", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756905901/Ac_air_conditioner_ntjsor.jpg" },
     { id: 5, category: "home", name: "Inverter and solar panel", price: 600000, tagColor: "bg-navy", border: "border-navy", emoji: "🖼️", image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756906276/inverter_dyttf1.jpg" },
