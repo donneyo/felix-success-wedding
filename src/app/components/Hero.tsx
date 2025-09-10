@@ -11,37 +11,34 @@ const Hero = () => {
 
   const slides = [
     {
-      image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756162680/fs3_nkwmr2.jpg",
+      image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757503243/img_9828_copy_hbr0zs.jpg",
       text: "Felix & Success — We can’t wait to share our special day with you",
     },
     {
-      image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756162671/fs7_eikabw.jpg",
-      text: "Together is a beautiful place to be",
+      image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757503233/img_0038_copy_tnw4c5.jpg",
+      text: "Counting down to the best day of our lives",
     },
     {
-      image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756162668/fs8_nt4sd6.jpg",
+      image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757503239/img_9877_copy_ybuqix.jpg",
       text: "Join us as we begin our forever story",
     },
     {
-      image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756162668/fs5_xgalb1.jpg",
+      image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757503220/img_0004_copy_oqtmxt.jpg",
       text: "Your presence means the world to us",
     },
     {
-      image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756162661/fs4_ayju7d.jpg",
+      image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757503239/img_9809_copy_ojihdd.jpg",
       text: "Save the date — love is in the air",
     },
     {
-      image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756162667/fs2_bdhvx8.jpg",
+      image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757503211/img_0020_copy_siryfk.jpg",
       text: "From this moment, forever",
     },
     {
-      image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756162657/fs6_yvncit.jpg",
+      image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757503224/img_0071_copy_luukkm.jpg",
       text: "Celebrate love, laughter, and happily ever after",
     },
-    {
-      image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756162657/fs1_bkhhtg.jpg",
-      text: "Counting down to the best day of our lives",
-    },
+    
   ];
 
   // countdown state
