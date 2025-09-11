@@ -1,4 +1,4 @@
-"use client";
+u"use client";
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
@@ -57,7 +57,7 @@ export default function WeddingDetails() {
   const groomsmenSlides = [
     {
       label: "Best Man - Niyi",
-      img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757468699/neyo3_xlgcaj.jpg",
+      img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756941359/PXL_20250827_143323810_ev50hd.jpg",
     },
     {
       label: "Groomsman - Skenk",
