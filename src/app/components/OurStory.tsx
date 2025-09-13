@@ -118,8 +118,8 @@ export default function OurStory() {
             <h3 className="font-serif text-2xl text-teal-600 mb-4 font-bold">
               The Proposal
             </h3>
-            <p className="text-gray-700 leading-relaxed mb-6">
-              On a beautiful sunset evening at their favorite hiking spot, Tega
+            <p className="text-white-700 leading-relaxed mb-6">
+              On a beautiful sunset evening at their favorite eatery spot, Tega
               got down on one knee and asked Success to be his forever adventure
               partner. With tears of joy and an enthusiastic "Yes!", they began
               planning their next chapter together.
