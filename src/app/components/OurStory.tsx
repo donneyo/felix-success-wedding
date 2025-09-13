@@ -124,7 +124,7 @@ export default function OurStory() {
               partner. With tears of joy and an enthusiastic "Yes!", they began
               planning their next chapter together.
             </p>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-white-700 leading-relaxed">
               Surrounded by family and friends, they are now ready to say "I do"
               and begin their greatest adventure yet — marriage!
             </p>
