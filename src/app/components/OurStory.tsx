@@ -88,15 +88,15 @@ export default function OurStory() {
             filled with love, laughter, and endless adventure.
           </p>
          </div>
-      )}
-                                  <button
+          )}
+                    <button
                       onClick={() => setExpanded(!expanded)}
                       className="mt-3 text-rose-500 font-medium hover:underline"
                     >
                       {expanded ? "Read less ▲" : "Read more ▼"}
                     </button>
-                    </div>
-                    </motion.div>
+                   
+             </motion.div>
 
 
                 {/* Second Row */}
