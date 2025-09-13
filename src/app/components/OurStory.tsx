@@ -48,40 +48,52 @@ export default function OurStory() {
             <h3 className="font-serif text-2xl text-teal-600 mb-4 font-bold">
               The Beginning
             </h3>
-            <p className="text-gray-700 leading-relaxed mb-6">
+            <p className="text-white-700 leading-relaxed mb-6">
               Tega and Success’s love story began in the most unexpected of
-              places — inside a university project handout 😂. Success was eager
-              to connect with the team lead, while Tega, the calm and focused
-              leader, was determined to guide the project. Their teamwork
-              quickly grew into something more meaningful.
+              places—inside a university project handout 😂😂 As fate would have
+              it, Success had a tough project in 300L and borrowed a handout
+              from a friend. On the front page of the project handout, guess who
+              was the lead team? Tega! Success was able to get the team lead's
+              number with the zeal and determination to see her project succeed,
+              on the other hand Felix stepping up as the group leader. Focused,
+              calm, and dedicated, Felix was determined to see the project
+              succeed. Success, on the other hand, brought her curiosity,
+              warmth, and determination to the table.
             </p>
 
             {expanded && (
-              <div className="mt-3 space-y-3 text-gray-700">
+              <div className="mt-3 space-y-3">
                 <p>
-                  A simple WhatsApp message about the project soon turned into
-                  late-night conversations, filled with laughter, dreams, and
-                  warmth.
+                  One day, Success had a question about the project and decided
+                  to send Felix a message on WhatsApp. What seemed like a simple
+                  academic chat quickly became the start of something much
+                  deeper. Their conversations moved from Tega helping Success
+                  meet her project deadlines to late-night talks filled with
+                  laughter, shared dreams, and heartfelt moments.
                 </p>
                 <p>
-                  In each other, they found more than teammates — they found
-                  balance. Tega’s calm strength blended with Success’s vibrant
-                  energy, and their friendship blossomed into love.
+                  In each other, they found more than just teammates—they found
+                  balance. Felix’s calm leadership blended perfectly with
+                  Success’s vibrant energy. What started as a project blossomed
+                  into companionship, friendship, and ultimately, love.
                 </p>
                 <p>
-                  From study sessions to adventures, their bond only grew
-                  stronger. Together, they discovered that life shines brighter
+                  From study sessions to shared adventures, their bond grew
+                  stronger with each passing day. They discovered not just how
+                  well they worked together, but how much brighter life felt
                   when shared.
                 </p>
                 <p>
-                  Today, their journey has brought them here: to a love built on
-                  trust, respect, and joy, with a promise to walk hand in hand
-                  forever.
+                  Today, their journey has brought them here—to a love that
+                  feels destined, a partnership built on trust, respect, and
+                  joy, and a promise to walk hand in hand forever.
                 </p>
                 <p>
-                  What started as a school project has become life’s greatest
-                  project. From classmates to soulmates — their story is nothing
-                  short of magical.
+                  What began as a school project has become life’s greatest
+                  project, from schoolmates to soulmates. What we believed to be
+                  teamwork in school has now become a perfect love story. Cheers
+                  to a marriage filled with love, laughter, and endless
+                  adventure.
                 </p>
               </div>
             )}
