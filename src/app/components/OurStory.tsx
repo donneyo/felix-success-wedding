@@ -9,13 +9,13 @@ export default function OurStory() {
   return (
     <section
       id="story"
-      className="py-20 bg-gradient-to-br from-blue-950 to-white"
+      className="py-20 bg-gradient-to-br from-blue-1500 to-white-100"
     >
       <div className="max-w-4xl mx-auto px-4">
-        {/* Section Title */}
-        <h2 className="font-serif text-4xl md:text-5xl text-center text-white mb-16 font-bold">
+        <h2 className="font-serif text-4xl md:text-5xl text-center text-white-400 mb-16 font-bold">
           Our Love Story
         </h2>
+
 
         {/* First Row - How We Met */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
