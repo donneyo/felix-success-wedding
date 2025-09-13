@@ -10,10 +10,7 @@ export default function WeddingDetails() {
       label: "Maid of Honor - Loveth",
       img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757376059/b1_hmrjzl.jpg",
     },
-    {
-      label: "Bridesmaid - Abigail",
-      img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757376057/b8_juvmyj.jpg",
-    },
+    
     {
       label: "Bridesmaid - Bella",
       img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757465841/bella_xfbvhx.jpg",
