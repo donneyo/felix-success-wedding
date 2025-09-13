@@ -1,8 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 export default function OurStory() {
+    const [expanded, setExpanded] = useState(false);
     return (
         <section
             id="story"
@@ -45,17 +47,56 @@ export default function OurStory() {
                             The Beginning
                         </h3>
                         <p className="text-white-700 leading-relaxed mb-6">
-                            Felix and Success first crossed paths at a mutual friend's
-                            gathering in 2020. What started as a simple conversation about
-                            their shared love for adventure and good coffee quickly blossomed
-                            into something beautiful.
+                         Tega and Success’s love story began in the most unexpected of
+                         places—inside a university project handout 😂😂 Success was able to get
+                        the team lead's number with the zeal and determination to see her
+                        project succeed, on the other hand Tega stepping up as the group leader.
+                        Focused, calm, and dedicated, Tega was determined to see the project
+                        succeed. Success, on the other hand, brought her curiosity, warmth, and
+                        determination to the table.
                         </p>
-                        <p className="text-white-100 leading-relaxed">
-                            From late-night conversations to weekend adventures, they
-                            discovered they were perfect complements to each other - Felix's
-                            calm nature balancing Success's vibrant energy, creating a love
-                            story that feels like destiny.
-                        </p>
+                         {expanded && (
+        <div className="mt-3 space-y-3">
+          <p>
+            One day, Success had a question about the project and decided to send
+            Felix a message on WhatsApp. What seemed like a simple academic chat
+            quickly became the start of something much deeper. Their conversations
+            moved from Tega helping Success meet her project deadlines to
+            late-night talks filled with laughter, shared dreams, and heartfelt
+            moments.
+          </p>
+          <p>
+            In each other, they found more than just teammates—they found balance.
+            Tega’s calm leadership blended perfectly with Success’s vibrant
+            energy. What started as a project blossomed into companionship,
+            friendship, and ultimately, love.
+          </p>
+          <p>
+            From study sessions to shared adventures, their bond grew stronger
+            with each passing day. They discovered not just how well they worked
+            together, but how much brighter life felt when shared.
+          </p>
+          <p>
+            Today, their journey has brought them here—to a love that feels
+            destined, a partnership built on trust, respect, and joy, and a
+            promise to walk hand in hand forever.
+          </p>
+          <p>
+            What began as a school project has become life’s greatest project,
+            from schoolmates to soulmates. What we believed to be teamwork in
+            school has now become a perfect love story. Cheers to a marriage
+            filled with love, laughter, and endless adventure.
+          </p>
+         </div>
+      )}
+          <button
+        onClick={() => setExpanded(!expanded)}
+        className="mt-3 text-rose-500 font-medium hover:underline"
+      >
+        {expanded ? "Read less ▲" : "Read more ▼"}
+      </button>
+    </div>               
+                      
                     </motion.div>
                 </div>
 
