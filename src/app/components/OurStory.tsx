@@ -89,15 +89,15 @@ export default function OurStory() {
           </p>
          </div>
       )}
-          <button
-        onClick={() => setExpanded(!expanded)}
-        className="mt-3 text-rose-500 font-medium hover:underline"
-      >
-        {expanded ? "Read less ▲" : "Read more ▼"}
-      </button>
-    </div>               
-                      
+                                  <button
+                      onClick={() => setExpanded(!expanded)}
+                      className="mt-3 text-rose-500 font-medium hover:underline"
+                    >
+                      {expanded ? "Read less ▲" : "Read more ▼"}
+                    </button>
+                    </div>
                     </motion.div>
+
                 </div>
 
                 {/* Second Row */}
