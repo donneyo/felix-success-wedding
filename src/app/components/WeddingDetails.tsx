@@ -12,10 +12,6 @@ export default function WeddingDetails() {
     },
     
     {
-      label: "Bridesmaid - Bella",
-      img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757465841/bella_xfbvhx.jpg",
-    },
-    {
           label: "Bridesmaid - Ajoke",
           img: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757376055/b6_u2jcqh.jpg",
         },
