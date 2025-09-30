@@ -8,8 +8,8 @@ const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfa
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata = {
-  title: "Elegant Wedding",
-  description: "A beautiful modern dark theme wedding site",
+  title: "Success&Felix2025",
+  description: "A beautiful wedding of the year",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
