@@ -1,138 +1,64 @@
-// src/app/components/Hero.tsx
 "use client";
-
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { Tangerine } from "next/font/google";
+import { Tangerine, Playfair_Display } from "next/font/google";
 
 const alexBrush = Tangerine({ subsets: ["latin"], weight: "700" });
+const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400", "600"] });
 
-export default function Hero() {
+const Hero = () => {
   const [index, setIndex] = useState(0);
 
   const slides = [
     {
-      image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756162680/fs3_nkwmr2.jpg",
+      image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757503243/img_9828_copy_hbr0zs.jpg",
       text: "Felix & Success — We can’t wait to share our special day with you",
     },
     {
-      image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756162671/fs7_eikabw.jpg",
-      text: "Together is a beautiful place to be",
+      image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757503233/img_0038_copy_tnw4c5.jpg",
+      text: "Counting down to the best day of our lives",
     },
     {
-      image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756162668/fs8_nt4sd6.jpg",
+      image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757503239/img_9877_copy_ybuqix.jpg",
       text: "Join us as we begin our forever story",
     },
     {
-      image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756162668/fs5_xgalb1.jpg",
+      image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757503220/img_0004_copy_oqtmxt.jpg",
       text: "Your presence means the world to us",
     },
     {
-      image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756162661/fs4_ayju7d.jpg",
+      image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757503239/img_9809_copy_ojihdd.jpg",
       text: "Save the date — love is in the air",
     },
     {
-      image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756162667/fs2_bdhvx8.jpg",
+      image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757503211/img_0020_copy_siryfk.jpg",
       text: "From this moment, forever",
     },
     {
-      image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756162657/fs6_yvncit.jpg",
+      image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1757503224/img_0071_copy_luukkm.jpg",
       text: "Celebrate love, laughter, and happily ever after",
-    },
-    {
-      image: "https://res.cloudinary.com/dfevwox5z/image/upload/v1756162657/fs1_bkhhtg.jpg",
-      text: "Counting down to the best day of our lives",
     },
   ];
 
-  const handleArrow = (direction: "l" | "r") => {
-    if (direction === "l") setIndex(index !== 0 ? index - 1 : slides.length - 1);
-    if (direction === "r") setIndex(index !== slides.length - 1 ? index + 1 : 0);
-  };
-
-  // AUTO SLIDE
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [slides.length]);
-
-  return (
-    <div className="relative w-screen h-screen overflow-hidden bg-black">
-      {/* Left Arrow */}
-      <button
-        aria-label="previous"
-        onClick={() => handleArrow("l")}
-        className="absolute z-20 top-1/2 left-4 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 cursor-pointer transition"
-      >
-        <span className="block w-4 h-4 border-t-2 border-l-2 border-white rotate-[-45deg]" />
-      </button>
-
-      {/* Slides */}
-      <div className="relative w-full h-full">
-        {slides.map((slide, i) => (
-          <div
-            key={i}
-            aria-hidden={index !== i}
-            className={`absolute inset-0 w-full h-full transition-opacity duration-[800ms] ease-in-out ${
-              index === i ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"
-            }`}
-          >
-            <Image src={slide.image} alt={slide.text} fill className="object-cover" priority={i === 0} />
-          </div>
-        ))}
-      </div>
-
-      {/* Overlay text & countdown (single instances) */}
-      <div className="absolute inset-0 flex flex-col justify-end items-center pointer-events-none">
-        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/70 via-black/30 to-transparent pointer-events-none" />
-        <div className="relative mx-4 mb-12 max-w-4xl text-center pointer-events-auto">
-          <p className={`${alexBrush.className} text-white text-4xl sm:text-5xl md:text-6xl leading-tight drop-shadow-lg`}>
-            {slides[index].text}
-          </p>
-
-          {/* Countdown box — single, not repeated */}
-          <CountdownBox />
-        </div>
-      </div>
-
-      {/* Right Arrow */}
-      <button
-        aria-label="next"
-        onClick={() => handleArrow("r")}
-        className="absolute z-20 top-1/2 right-4 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 cursor-pointer transition"
-      >
-        <span className="block w-4 h-4 border-t-2 border-r-2 border-white rotate-[45deg]" />
-      </button>
-
-      {/* Dot Indicators */}
-      <div className="absolute z-20 bottom-6 left-1/2 -translate-x-1/2 flex space-x-3 pointer-events-auto">
-        {slides.map((_, i) => (
-          <button
-            key={i}
-            onClick={() => setIndex(i)}
-            aria-label={`go-to-slide-${i}`}
-            className={`w-3 h-3 rounded-full transition-all ${index === i ? "bg-white scale-125" : "bg-white/40 hover:bg-white/70"}`}
-          />
-        ))}
-      </div>
-    </div>
-  );
-}
-
-function CountdownBox() {
-  const [timeLeft, setTimeLeft] = useState({ days: "00", hours: "00", minutes: "00", seconds: "00" });
+  // countdown state
+  const [timeLeft, setTimeLeft] = useState({
+    days: "00",
+    hours: "00",
+    minutes: "00",
+    seconds: "00",
+  });
 
   useEffect(() => {
-    const targetDate = new Date("2025-10-06T16:00:00").getTime();
-    const interval = setInterval(() => {
+    // Event: Oct 4, 2025 at 16:00 WAT (Lagos, UTC+1)
+    // Convert to UTC instant: 16:00 WAT == 15:00 UTC
+    const target = Date.UTC(2025, 9, 4, 15, 0, 0); // month 9 => October
+
+    const tick = () => {
       const now = Date.now();
-      const distance = targetDate - now;
+      const distance = target - now;
 
       if (distance <= 0) {
         setTimeLeft({ days: "00", hours: "00", minutes: "00", seconds: "00" });
-        clearInterval(interval);
         return;
       }
 
@@ -147,31 +73,121 @@ function CountdownBox() {
         minutes: String(minutes).padStart(2, "0"),
         seconds: String(seconds).padStart(2, "0"),
       });
-    }, 1000);
+    };
 
+    tick(); // run immediately so UI isn't blank for a second
+    const interval = setInterval(tick, 1000);
     return () => clearInterval(interval);
   }, []);
 
+  const handleArrow = (direction: "l" | "r") => {
+    if (direction === "l") {
+      setIndex((prev) => (prev !== 0 ? prev - 1 : slides.length - 1));
+    } else {
+      setIndex((prev) => (prev !== slides.length - 1 ? prev + 1 : 0));
+    }
+  };
+
+  // AUTOPLAY
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [slides.length]);
+
   return (
-    <div className="mt-8 inline-block bg-white/10 backdrop-blur-sm rounded-2xl px-6 py-4 text-white pointer-events-auto">
-      <div className="grid grid-cols-4 gap-4 text-center">
-        <div>
-          <div className="text-2xl font-bold">{timeLeft.days}</div>
-          <div className="text-xs">Days</div>
-        </div>
-        <div>
-          <div className="text-2xl font-bold">{timeLeft.hours}</div>
-          <div className="text-xs">Hours</div>
-        </div>
-        <div>
-          <div className="text-2xl font-bold">{timeLeft.minutes}</div>
-          <div className="text-xs">Minutes</div>
-        </div>
-        <div>
-          <div className="text-2xl font-bold">{timeLeft.seconds}</div>
-          <div className="text-xs">Seconds</div>
-        </div>
+    <div className="relative w-screen h-screen overflow-hidden bg-black">
+      {/* Left Arrow */}
+      <div
+        className="absolute top-1/2 left-4 -translate-y-1/2 w-10 h-10 flex items-center justify-center
+                   rounded-full bg-white/10 hover:bg-white/20 cursor-pointer transition z-20"
+        onClick={() => handleArrow("l")}
+        aria-label="Previous slide"
+      >
+        <span className="block w-4 h-4 border-t-2 border-l-2 border-white rotate-[-45deg]" />
+      </div>
+
+      {/* Slides */}
+      <div className="relative w-full h-full">
+        {slides.map((slide, i) => (
+          <div
+            key={i}
+            className={`absolute inset-0 w-screen h-screen transition-opacity duration-[4000ms] ease-in-out ${
+              index === i ? "opacity-100 z-10" : "opacity-0 z-0"
+            }`}
+          >
+            <Image
+              src={slide.image}
+              alt={`slide ${i}`}
+              fill
+              unoptimized
+              className="object-cover"
+              priority={i === 0}
+            />
+
+            {/* Overlay */}
+            <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center space-y-8">
+              <p
+                className={`${alexBrush.className} text-white text-5xl md:text-7xl font-normal drop-shadow-lg`}
+              >
+                {slide.text}
+              </p>
+
+              {/* Countdown under text — transparent card on image */}
+              <div className="bg-black/50 backdrop-blur-md rounded-xl px-6 py-4 inline-block border border-white/20 shadow-lg">
+                <h3 className="text-white text-lg mb-2 tracking-wider font-semibold">
+                  Countdown to Our Big Day
+                </h3>
+                <div className="flex space-x-6 text-white font-bold text-2xl md:text-3xl">
+                  <div className="text-center">
+                    <p>{timeLeft.days}</p>
+                    <span className="block text-sm font-normal">Days</span>
+                  </div>
+                  <div className="text-center">
+                    <p>{timeLeft.hours}</p>
+                    <span className="block text-sm font-normal">Hours</span>
+                  </div>
+                  <div className="text-center">
+                    <p>{timeLeft.minutes}</p>
+                    <span className="block text-sm font-normal">Minutes</span>
+                  </div>
+                  <div className="text-center">
+                    <p className="text-rose-400">{timeLeft.seconds}</p>
+                    <span className="block text-sm font-normal">Seconds</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Right Arrow */}
+      <div
+        className="absolute top-1/2 right-4 -translate-y-1/2 w-10 h-10 flex items-center justify-center
+                   rounded-full bg-white/10 hover:bg-white/20 cursor-pointer transition z-20"
+        onClick={() => handleArrow("r")}
+        aria-label="Next slide"
+      >
+        <span className="block w-4 h-4 border-t-2 border-r-2 border-white rotate-[45deg]" />
+      </div>
+
+      {/* Dot Indicators */}
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-3 z-20">
+        {slides.map((_, i) => (
+          <button
+            key={i}
+            className={`w-3 h-3 rounded-full transition-all ${
+              index === i ? "bg-white scale-125" : "bg-white/40 hover:bg-white/70"
+            }`}
+            onClick={() => setIndex(i)}
+            aria-label={`Go to slide ${i + 1}`}
+          />
+        ))}
       </div>
     </div>
   );
-}
+};
+
+export default Hero;
